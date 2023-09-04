@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -11,51 +9,30 @@ body{
 
 /* Comienzo Cabecera */
 
-.cabecera{
-    padding: 10px 0px;
+/* Logotipo */
+
+.simbolo {
+    width: 40px;
+    margin: 10px 10px 10px 40px;
 }
 
-.navegacion{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position:absolute;
-    top: 0px;
-    z-index: 100;
-    background-color: #000000bb;
-    box-sizing: border-box;
-    padding: 10px 0px;
+/* Estados del menú */
+
+.menu li a {
+    color: #d2d2d2;
 }
 
-.navegacion .logo{
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    height: 50px;
+.menu li a:hover {
+    color: #C4C200;
 }
 
-.navegacion .logo span{
-    font-size: 25px;
-    text-transform: uppercase;
-    padding-left: 10px;
+.menu li .active {
+    color: #ffffff;
 }
 
-.menu{
-    display: flex;
-    justify-content:space-around;
-    padding-right: 30px;
-    width: 50%;
-}
-
-.menu li {
-    display: inline-block;
-    padding: 0 10px ;
-}
-
-.menu a{    
-    color: #fff;
-    text-decoration: none;
+.menu li a:focus {
+    color: #929292;
+    
 }
 
 /* Fin Cabecera */
@@ -69,19 +46,18 @@ body{
     background-position: center;
     background-size: cover;
     display: flex;
+    align-items: center;
     position: absolute;
     top: 0;
 }
 
 .texto-inicio{
-    box-sizing: border-box;
-    width: 38%;
     padding: 10% 20px;
 }
 
 .hero .texto-inicio h1{
     font-size: 65px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', Times, serif;
 }
 
 .hero .texto-inicio p{
@@ -90,23 +66,51 @@ body{
     padding-top: 40px;
 }
 
-.hero .texto-inicio .link_porfolio {
-    background-color: #fff;
-    margin-top: 50px;
+/* Formulario */
+
+.hero .texto-inicio .caja .formulario {
+	flex: 50%;
     display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    width: 50%;
+    margin-top: 30px;
 }
 
-.hero .texto-inicio .link_porfolio a{
-    text-decoration: none;
-    color: #000;
-    font-size: 25px;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
+.hero .texto-inicio .caja .formulario form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+
+    /* Extension css-auto-prefix */
+
+    -wetexto-inicio-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
+
+.hero .texto-inicio .caja input {
+	padding: 12px 32px;
+	border: none;
+	font-size: 20px;
+}
+
+.hero .texto-inicio .caja input[type="submit"] {
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+
+    /* Extension css-auto-prefix */
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.hero .texto-inicio .caja input:focus {
+	outline-style:none;
+}
+
 
 /* Fin Contenido */
 
