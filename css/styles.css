@@ -3,6 +3,7 @@
 }
 
 body{
+    /* margin-top: 75px; */
     background-color: #000000;
     color: #fff;
     }
@@ -32,7 +33,7 @@ body{
 
 .menu li a:focus {
     color: #929292;
-    
+
 }
 
 /* Fin Cabecera */
@@ -47,8 +48,8 @@ body{
     background-size: cover;
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 0;
+    /* position: absolute; 
+    top: 0; */
 }
 
 .texto-inicio{
@@ -110,13 +111,12 @@ body{
 .hero .texto-inicio .caja input:focus {
 	outline-style:none;
 }
-
-
 /* Fin Contenido */
 
 /* Comienzo de Footer */
-
-footer .pie_pagina{ 
-    color: #fff;
-    -ms-flex-align: end;
+.pie-pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
 }
