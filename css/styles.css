@@ -3,7 +3,7 @@
 }
 
 body{
-    /* margin-top: 75px; */
+    margin-top: 75px;
     background-color: #000000;
     color: #fff;
     }
@@ -38,7 +38,7 @@ body{
 
 /* Fin Cabecera */
 
-/* Cmienzo Contenido */
+/* Comienzo Contenido */
 
 .hero{
     width: 100%;
@@ -48,8 +48,6 @@ body{
     background-size: cover;
     display: flex;
     align-items: center;
-    /* position: absolute; 
-    top: 0; */
 }
 
 .texto-inicio{
@@ -120,3 +118,47 @@ body{
     align-items: center;
     height: 60px;
 }
+
+
+/* Comienzo Página Soy */
+
+
+
+/* Fin Página Soy */
+
+
+/* Comienzo Página Servicios */
+
+
+
+/* Fin Página Servicios */
+
+
+/* Comienzo Página Porfolio */
+
+.porfolio {
+    max-width: 100%;
+}
+
+.porfolio .contenedor_fotos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.porfolio .contenedor_fotos .columna {
+    flex: 25%;
+}
+
+.porfolio .contenedor_fotos .columna img {
+    flex: 100%;
+    max-width: 100%;
+}
+
+/* Fin Página Porfolio */
+
+/* Comienzo Página Contacto */
+
+
+
+/* Fin Página Contacto */
