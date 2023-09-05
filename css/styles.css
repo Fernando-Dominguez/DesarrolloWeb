@@ -196,7 +196,13 @@ body{
         line-height: 1.5;
         padding-top: 40px;
     }
-    
+    /* Comienzo Página Porfolio */
+
+
+
+.porfolio .contenedor_fotos .columna {
+    flex: 50%;
+}
 }
 
 
@@ -230,7 +236,9 @@ body{
     }
    
 
-    
+    .porfolio .contenedor_fotos .columna {
+        flex: 100%;
+    }
         /* .navegacion label {
             display: block;
             color: #fff;
