@@ -2,12 +2,12 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body{
+body {
     margin-top: 75px;
     background-color: #000000;
     color: #fff;
     box-sizing: border-box;
-    }
+}
 
 /* Comienzo Cabecera */
 /* Logotipo */
@@ -50,7 +50,7 @@ body{
 
 /* Comienzo Contenido */
 
-.hero{
+.hero {
     width: 100%;
     height: 100vh;
     background-image: url(../img/portada-inicio.jpg);
@@ -60,16 +60,16 @@ body{
     align-items: center;
 }
 
-.texto-inicio{
+.texto-inicio {
     padding: 10% 20px;
 }
 
-.hero .texto-inicio h1{
+.hero .texto-inicio h1 {
     font-size: 65px;
     font-family: 'Lucida Sans', Times, serif;
 }
 
-.hero .texto-inicio p{
+.hero .texto-inicio p {
     font-size: 26px;
     line-height: 1.5;
     padding-top: 40px;
@@ -78,7 +78,7 @@ body{
 /* Formulario */
 
 .hero .texto-inicio .caja .formulario {
-	flex: 50%;
+    flex: 50%;
     display: flex;
     margin-top: 30px;
 }
@@ -98,9 +98,9 @@ body{
 }
 
 .hero .texto-inicio .caja input {
-	padding: 12px 32px;
-	border: none;
-	font-size: 20px;
+    padding: 12px 32px;
+    border: none;
+    font-size: 20px;
 }
 
 .hero .texto-inicio .caja input[type="submit"] {
@@ -117,12 +117,13 @@ body{
 }
 
 .hero .texto-inicio .caja input:focus {
-	outline-style:none;
+    outline-style: none;
 }
+
 /* Fin Contenido */
 
 /* Comienzo de Footer */
-.pie-pagina{
+.pie-pagina {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,8 +142,6 @@ body{
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
 }
-
-
 
 .contenedor video {
     width: 100%;
@@ -191,11 +190,15 @@ body{
 /* Comienzo de media query */
 
 @media screen and (max-width:992px) {
-    .hero .texto-inicio h1{
+
+    /* Página Index */
+
+    .hero .texto-inicio h1 {
         font-size: 55px;
         font-family: 'Lucida Sans', Times, serif;
     }
-    .hero .texto-inicio p{
+
+    .hero .texto-inicio p {
         font-size: 19px;
         line-height: 1.5;
         padding-top: 40px;
@@ -203,16 +206,16 @@ body{
 
     /* Página Porfolio */
 
-.porfolio .contenedor_fotos .columna {
-    flex: 50%;
-}
+    .porfolio .contenedor_fotos .columna {
+        flex: 50%;
+    }
 }
 
 
 @media screen and (max-width:768px) {
 
     /* Ocultando menu desk */
-   
+
     .navegacion .menu {
         display: none;
     }
@@ -237,71 +240,66 @@ body{
         justify-content: start;
         align-items: center;
     }
-   
 
-    .porfolio .contenedor_fotos .columna {
-        flex: 100%;
+    /* Página Index */
+
+    /* Contenido */
+
+    .hero {
+        width: 100%;
+        height: 100vh;
+        background-image: url();
+        display: flex;
+        align-items: center;
     }
-        /* .navegacion label {
-            display: block;
-            color: #fff;
-            margin-right: 30px;
-        } */
-
-
-        .hero{
-            width: 100%;
-            height: 100vh;
-            background-image: url();
-            display: flex;
-            align-items: center;
-        }
 
     .hero .texto-inicio {
         padding: 60px 40px;
         display: flex;
         height: 100%;
-        /* flex-flow: row wrap;
-        justify-content: flex-start; */
     }
-    
-    /* Contenido */
-    
+
     .hero .texto-inicio .caja {
         max-width: 100%;
         text-align: center;
         align-self: center;
     }
 
-/* Formulario */
+    /* Formulario */
 
-.hero .texto-inicio .caja .formulario {
-    flex: 100%;
-    justify-content: center;
-}
-
-.hero .texto-inicio .caja .formulario form {
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.hero .texto-inicio .caja input {
-    text-align: center;
-
-}
-
-.hero .texto-inicio .caja input[type="submit"] {
-    width: 100%;
-}
-
-.hero .texto-inicio .caja .formulario {
+    .hero .texto-inicio .caja .formulario {
+        flex: 100%;
         justify-content: center;
     }
 
-    /* Comienzo de Footer */
-.pie-pagina{
-    align-items: end;
-    margin-top: 40px;
-}
+    .hero .texto-inicio .caja .formulario form {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 
+    .hero .texto-inicio .caja input {
+        text-align: center;
+
+    }
+
+    .hero .texto-inicio .caja input[type="submit"] {
+        width: 100%;
+    }
+
+    .hero .texto-inicio .caja .formulario {
+        justify-content: center;
+    }
+
+    /* Footer */
+
+    .pie-pagina {
+        align-items: end;
+        margin-top: 40px;
+    }
+
+    /* Página Porfolio */
+    
+    .porfolio .contenedor_fotos .columna {
+        flex: 100%;
+    }
 }
