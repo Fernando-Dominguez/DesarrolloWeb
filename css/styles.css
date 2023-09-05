@@ -6,10 +6,10 @@ body{
     margin-top: 75px;
     background-color: #000000;
     color: #fff;
+    box-sizing: border-box;
     }
 
 /* Comienzo Cabecera */
-
 /* Logotipo */
 
 .simbolo {
@@ -132,7 +132,21 @@ body{
 
 /* Comienzo Página Soy */
 
+.foto_perfil img {
+    width: 100%;
+    padding: 30px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
 
+
+
+.contenedor video {
+    width: 100%;
+}
 
 /* Fin Página Soy */
 
@@ -176,16 +190,6 @@ body{
 
 /* Comienzo de media query */
 
-/* sm en bootstrap */
-
-@media screen and (max-width:1200px){
-    .hero {
-        padding-top: 40px;
-    }
-
-
-}
-
 @media screen and (max-width:992px) {
     .hero .texto-inicio h1{
         font-size: 55px;
@@ -196,9 +200,8 @@ body{
         line-height: 1.5;
         padding-top: 40px;
     }
-    /* Comienzo Página Porfolio */
 
-
+    /* Página Porfolio */
 
 .porfolio .contenedor_fotos .columna {
     flex: 50%;
@@ -228,7 +231,7 @@ body{
         height: 100vh;
         position: absolute;
         left: 0;
-        top: 80px;
+        top: 75px;
         display: flex;
         flex-direction: column;
         justify-content: start;
