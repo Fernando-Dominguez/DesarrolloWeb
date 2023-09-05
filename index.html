@@ -41,6 +41,8 @@
         <span class="fs-5 text-uppercase align-self-center">Ismael Solanas</span>
       </div>
       <!-- Fin logotipo -->
+      <!-- Checkbox Mobile -->
+      <input type="checkbox" id="check__menu">
       <!-- Comienzo Menú -->
       <ul class="nav menu">
         <li class="nav-item">
@@ -64,6 +66,11 @@
             href="./contacto.html">Contacto</a>
         </li>
       </ul>
+      <!-- Menu Mobile -->
+      <label for="check__menu">
+        <i class="bx bx-menu"></i>
+      </label>
+      <!-- Fin menu mobile -->
       <!-- Fin Menú -->
     </nav>
     <!-- Fin Barra de Navegación fija -->
@@ -73,7 +80,8 @@
   <!-- Comienzo de Contenido -->
   <main class="container-fluid hero">
     <div class="row texto-inicio">
-      <div class="col-6 caja">
+      <!-- Media query -->
+      <div class="col-lg-6 col-md-7 col-sm-12 caja">
         <h1>Bienvenido a mi mundo capturado en imágenes</h1>
         <p>Te invito a explorar mi portafolio y a ser parte de las historias que he tenido el honor de contar a través
           de mi lente.</p>
@@ -95,7 +103,7 @@
   <!-- Comienzo de Footer -->
   <footer class="pie-pagina"
     id="fin">
-        <span>&COPY; copyright 2023 - ismaelsalanas.com</span>
+    <span>&COPY; copyright 2023 - ismaelsalanas.com</span>
   </footer>
   <!-- Fin de Footer -->
 
