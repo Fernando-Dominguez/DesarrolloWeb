@@ -39,38 +39,80 @@ body {
 
 .wrap {
   max-width: 100%;
-  display: flex;
-  justify-content: space-around;
   padding: 3%;
 }
-.wrap h1 {
+.wrap .copy h1 {
+  text-transform: uppercase;
+  padding: 1% 3% 3%;
+}
+.wrap .copy .perfil {
+  display: flex;
+  padding: 40px 0px 0px 0px;
+}
+.wrap .copy .perfil .barra_h2 {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 4em;
+  background-color: #78760C;
+  border: 10px solid #78760C;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.wrap .copy .perfil .barra_h2 h2 {
+  text-align: center;
   width: 100%;
+  font-size: 2em;
 }
-.wrap p {
-  padding: 3% 0px;
-  padding-right: 5%;
-}
-.wrap .foto_perfil {
+.wrap .copy .perfil .barra_h2 img {
+  display: flex;
+  width: 35%;
+  margin-top: 110px;
+  margin-right: -30px;
+  max-width: 300px;
+  min-width: 250px;
   border-radius: 100%;
-}
-.wrap img {
-  max-width: 500px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
 }
+.wrap .copy .storytelling {
+  padding: 0 3%;
+}
+.wrap .copy .storytelling p {
+  line-height: 1.5em;
+}
+.wrap .copy .storytelling p:first-child {
+  width: 66%;
+}
+.wrap .copy .storytelling h3 {
+  font-size: 1.8em;
+}
+.wrap .copy .storytelling video {
+  max-width: 100%;
+  margin: 3% 0px;
+  border: 3px solid rgb(159, 159, 159);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
 
-.container_servicios {
+.container_service {
   text-align: center;
   padding: 3%;
 }
-.container_servicios h1 {
+.container_service h1 {
   color: #C30AC4;
   text-transform: uppercase;
   padding-bottom: 20px;
 }
-.container_servicios p {
+.container_service p {
   /* color: #e3e3e3; */
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -81,18 +123,18 @@ body {
   padding: 15px;
   line-height: 1.5rem;
 }
-.container_servicios h2 {
+.container_service h2 {
   padding: 30px;
   text-transform: uppercase;
 }
-.container_servicios .container_card {
+.container_service .container_card {
   display: grid;
   flex-flow: row wrap;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
 }
-.container_servicios .container_card .card {
+.container_service .container_card .card {
   text-align: center;
   border: 3px solid grey;
   border-radius: 30px;
@@ -105,15 +147,15 @@ body {
   background-color: white;
   color: black;
 }
-.container_servicios .container_card .card .card_img {
+.container_service .container_card .card .card_img {
   width: 100%;
 }
-.container_servicios .container_card .card .card-title {
+.container_service .container_card .card .card-title {
   color: #C41416;
   padding: 10px;
   font-size: 1.5em;
 }
-.container_servicios .container_card .card .btn {
+.container_service .container_card .card .btn {
   margin: 30px 0px;
   padding: 10px 30px 10px;
   width: 100px;
@@ -252,7 +294,7 @@ body {
   color: #C4C200;
 }
 .navegacion .menu li a:focus {
-  color: #929292;
+  color: #ca2b2b;
 }
 .navegacion .menu li .active {
   color: #ffffff;
@@ -335,6 +377,7 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  /* inicio index.html */
   .hero {
     background-image: url();
   }
@@ -356,9 +399,10 @@ body {
     font-size: 1em;
     width: 100%;
   }
+  /* fin index.html */
 }
 @media screen and (max-width: 768px) {
-  /* Ocultando menu desk */
+  /* inicio Ocultando menu desk */
   .navegacion .menu {
     display: none;
   }
@@ -385,6 +429,8 @@ body {
     text-align: center;
     font-size: 1.5em;
   }
+  /* fin Ocultando menu desk */
+  /* inicio index.html */
   .hero {
     background-image: url();
   }
@@ -407,6 +453,38 @@ body {
   .hero .contenedor .caja .formulario form input[type=submit] {
     font-size: 1em;
   }
+  /* fin index.html */
+  /* inicio page soy */
+  .wrap .copy h1 {
+    text-align: center;
+  }
+  .wrap .copy .perfil {
+    display: flex;
+    padding: 40px 0px 0px 0px;
+  }
+  .wrap .copy .perfil .barra_h2 {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 5%;
+  }
+  .wrap .copy .perfil .barra_h2 img {
+    width: 100%;
+    margin-top: 40px;
+    margin-right: 0;
+  }
+  .wrap .copy .storytelling {
+    margin-top: 320px;
+  }
+  .wrap .copy .storytelling p {
+    text-align: center;
+  }
+  .wrap .copy .storytelling p:first-child {
+    width: 100%;
+  }
+  .wrap .copy .storytelling h3 {
+    text-align: center;
+  }
+  /* fin page soy */
 }
 @media screen and (max-width: 480px) {
   .col-xs-1 {
