@@ -1,0 +1,16 @@
+.contenedor_fotos {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    .columna{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: red;
+        justify-content: center;
+        img{
+            width: 100%;
+        }
+    }
+
+}

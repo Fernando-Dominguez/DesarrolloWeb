@@ -1,0 +1,157 @@
+@import "reset";
+@import "grid";
+@import "variables";
+@import "fonts";
+@import "soy";
+@import "servicios";
+@import "portfolio";
+@import "contacto";
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.navegacion {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3%;
+    .marca {
+        display: flex;
+        align-items: center;
+        img {
+            width: 70px;
+            padding: 10px 10px 10px 0px;
+        }
+        span {
+            text-transform: uppercase;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+    }
+    #check__menu {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        width: 50%;
+        li {
+            display: inline-block;
+            padding: 0px 10px;
+            a {
+                text-decoration: none;
+                color: #d2d2d2;
+                &:hover {
+                    color: #C4C200;
+                }
+                &:focus {
+                    color: #929292;
+                }
+            }
+            .active {
+                color: #ffffff;
+            }
+        }
+    }
+    label {
+        display: none;
+    }
+}
+
+.hero {
+    background-image: url(../img/portada-inicio.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    .contenedor {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        height: 100%;
+        background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 50%, #000, rgb(0, 0, 0));
+        .caja {
+            /* width: 50%; */
+            padding: 20px 3%;
+            h1 {
+                font-size: 3em;
+                font-family: 'Lucida Sans', Times, serif;
+            }
+            p {
+                font-size: 1.3em;
+                line-height: 1.5;
+                padding-top: 40px;
+            }
+            .formulario {
+                display: flex;
+                margin-top: 30px;
+                form {
+                    background-color: #fff;
+                    border-radius: 10px;
+                    padding: 10px;
+                    display: flex;
+                    width: 100%;
+                
+                    /* Extension css-auto-prefix */
+                
+                    -wetexto-inicio-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    input {
+                        padding: 12px 32px;
+                        border: none;
+                        font-size: 1em;
+                        width: 60%;
+                        &:focus {
+                            outline-style: none;
+                        }
+                    }
+                    input[type="submit"] {
+                        background-color: #000;
+                        border-radius: 5px;
+                        color: #fff;
+                        font-size: 1em;
+                    
+                        /* Extension css-auto-prefix */
+                    
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        text-align: center
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "queries";

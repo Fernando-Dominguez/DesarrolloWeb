@@ -13,58 +13,46 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
     rel='stylesheet'>
 
-  <!-- Bootstrap 5 -->
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-    crossorigin="anonymous">
-
   <!-- Mis estilos -->
 
   <link rel="stylesheet"
-    href="css/styles.css">
+    href="css/style.css">
 
-  <title>Porfolio</title>
+  <title>Portfolio</title>
 </head>
 
-<body>
+<body class="grid-container">  
   <!--Comienzo de Cabecera -->
-  <header class="cabecera">
+  <header class="header">
     <!-- Comienzo Barra de Navegación fija -->
-    <nav class="navbar bg-black bg-opacity-75 fixed-top navegacion">
+    <nav class="navegacion">
       <!-- Comienzo Logotipo -->
-      <div class="d-flex align-self-center logo">
-        <img src="./img/iso_solanas300.svg"
+      <div class="marca">
+        <img src="./img/simbolo IS.png"
           alt="Ismael Solanas"
           class="simbolo" />
-        <span class="fs-5 text-uppercase align-self-center">Ismael Solanas</span>
+        <span class="logotipo">Ismael Solanas</span>
       </div>
       <!-- Fin logotipo -->
       <!-- Checkbox Mobile -->
       <input type="checkbox"
         id="check__menu">
       <!-- Comienzo Menú -->
-      <ul class="nav menu">
-        <li class="nav-item">
-          <a class="nav-link"
-            href="./index.html">Inicio</a>
+      <ul class="menu">
+        <li>
+          <a href="./index.html">Inicio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link"
-            href="./soy.html">Soy</a>
+        <li>
+          <a href="./soy.html">Soy</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link"
-            href="./servicios.html">Servicios</a>
-        </li class="nav-item">
-        <li class="nav-item">
-          <a class="nav-link active"
-            href="./porfolio.html">Porfolio</a>
+        <li>
+          <a href="./servicios.html">Servicios</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link"
-            href="./contacto.html">Contacto</a>
+        <li>
+          <a href="./portfolio.html" class="active">Portfolio</a>
+        </li>
+        <li>
+          <a href="./contacto.html">Contacto</a>
         </li>
       </ul>
       <!-- Menu Mobile -->
@@ -79,9 +67,9 @@
   <!-- fin de Cabecera -->
 
   <!-- Comienzo de Contenido -->
-  <main class="porfolio">
-    <div class="contenedor_fotos">
-      <div class="columna">
+  <main class="main porfolio">
+    <div class="col-m-12 contenedor_fotos">
+      <div class="col-xs-12 col-s-6 col-m-3 columna">
         <img src="./img/1.jpg"
           alt="">
         <img src="./img/2.jpg"
@@ -91,7 +79,7 @@
         <img src="./img/4.jpg"
           alt="">
       </div>
-      <div class="columna">
+      <div class="col-xs-12 col-s-6 col-m-3 columna">
         <img src="./img/5.jpg"
           alt="">
         <img src="./img/6.jpg"
@@ -101,7 +89,7 @@
         <img src="./img/8.jpg"
           alt="">
       </div>
-      <div class="columna">
+      <div class="col-xs-12 col-s-6 col-m-3 columna">
         <img src="./img/9.jpg"
           alt="">
         <img src="./img/10.jpg"
@@ -111,7 +99,7 @@
         <img src="./img/12.jpg"
           alt="">
       </div>
-      <div class="columna">
+      <div class="col-xs-12 col-s-6 col-m-3 columna">
         <img src="./img/13.jpg"
           alt="">
         <img src="./img/14.jpg"
@@ -126,17 +114,11 @@
   <!-- Fin de Contenido -->
 
   <!-- Comienzo de Footer -->
-  <footer class="pie-pagina"
+  <footer class="footer"
     id="fin">
     <span>&COPY; copyright 2023 - ismaelsalanas.com</span>
   </footer>
   <!-- Fin de Footer -->
-
-  <!-- Script Bootstrap 5 -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-
 </body>
 
 </html>

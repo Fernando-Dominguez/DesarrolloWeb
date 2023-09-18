@@ -1,0 +1,45 @@
+@import "./variables.scss";
+
+@each $media, $point in $media {
+    @if($media=="xs"){
+        @media screen and (max-width: #{$point}){
+            @for $i from 1 through 12 {
+                .col-#{$media}-#{$i} {
+                    width: (100% / 12) * $i;
+                }
+            }
+        }
+    }@else if($media=="s"){
+        @media screen and (min-width: #{$point}){
+            @for $i from 1 through 12 {
+                .col-#{$media}-#{$i} {
+                    width: (100% / 12) * $i;
+                }
+            }
+        }
+    }@else if($media=="m"){
+        @media screen and (min-width: #{$point}){
+            @for $i from 1 through 12 {
+                .col-#{$media}-#{$i} {
+                    width: (100% / 12) * $i;
+                }
+            }
+        }
+    }@else if($media=="l"){
+        @media screen and (min-width: #{$point}){
+            @for $i from 1 through 12 {
+                .col-#{$media}-#{$i} {
+                    width: (100% / 12) * $i;
+                }
+            }
+        }
+    }@else if($media=="xl"){
+        @media only screen and (min-width: #{$point}){
+            @for $i from 1 through 12 {
+                .col-#{$media}-#{$i} {
+                    width: (100% / 12) * $i;
+                }
+            }
+        }
+    }
+} 

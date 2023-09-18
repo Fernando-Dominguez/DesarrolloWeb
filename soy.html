@@ -13,58 +13,46 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
     rel='stylesheet'>
 
-  <!-- Bootstrap 5 -->
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-    crossorigin="anonymous">
-
   <!-- Mis estilos -->
 
   <link rel="stylesheet"
-    href="css/styles.css">
+    href="css/style.css">
 
   <title>Soy</title>
 </head>
 
-<body>
+<body class="grid-container">  
   <!--Comienzo de Cabecera -->
-  <header class="cabecera">
+  <header class="header">
     <!-- Comienzo Barra de Navegación fija -->
-    <nav class="navbar bg-black bg-opacity-75 fixed-top navegacion">
+    <nav class="navegacion">
       <!-- Comienzo Logotipo -->
-      <div class="d-flex align-self-center logo">
-        <img src="./img/iso_solanas300.svg"
+      <div class="marca">
+        <img src="./img/simbolo IS.png"
           alt="Ismael Solanas"
           class="simbolo" />
-        <span class="fs-5 text-uppercase align-self-center">Ismael Solanas</span>
+        <span class="logotipo">Ismael Solanas</span>
       </div>
       <!-- Fin logotipo -->
       <!-- Checkbox Mobile -->
       <input type="checkbox"
         id="check__menu">
       <!-- Comienzo Menú -->
-      <ul class="nav menu">
-        <li class="nav-item">
-          <a class="nav-link"
-            href="./index.html">Inicio</a>
+      <ul class="menu">
+        <li>
+          <a href="./index.html">Inicio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active"
-            href="./soy.html">Soy</a>
+        <li>
+          <a href="./soy.html" class="active">Soy</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link"
-            href="./servicios.html">Servicios</a>
-        </li class="nav-item">
-        <li class="nav-item">
-          <a class="nav-link"
-            href="./porfolio.html">Porfolio</a>
+        <li>
+          <a href="./servicios.html">Servicios</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link"
-            href="./contacto.html">Contacto</a>
+        <li>
+          <a href="./portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="./contacto.html">Contacto</a>
         </li>
       </ul>
       <!-- Menu Mobile -->
@@ -79,14 +67,10 @@
   <!-- fin de Cabecera -->
 
   <!-- Comienzo de Contenido -->
-  <main class="contenedor">
-    <div class="row">
-      <h1 class="col-12 h1 text-center p-3 ">Descubriendo al Narrador Visual: Ismael Solanas</h1>
-      <div class="col-4 foto_perfil">
-        <img src="./img/foto perfil.jpg"
-          alt="foto_perfil">
-      </div>
-      <div class="col-8 p-5">
+  <main class="main contenedor">
+    <div class="col-m-12 wrap">
+      <div class="col-m-6">
+        <h1 class="col-m-6">Descubriendo al Narrador Visual</h1>
         <p>¡Hola y bienvenidos! Soy Ismael Solanas, un apasionado contador de historias a través de la lente. Mi amor
           por la
           fotografía comenzó como un hobby y rápidamente se convirtió en mi pasión y vocación. Cada clic de mi cámara es
@@ -108,9 +92,13 @@
           un
           eterno soñador. Mi misión es llevar esta pasión a cada imagen que capturo y compartirla con el mundo.</p>
       </div>
+      <div class="col-m-6 foto_perfil">
+        <img src="./img/foto perfil.jpg"
+          alt="foto_perfil">
+      </div>
     </div>
 
-    <h3 class="col-12 h2 p-3 text-center">Storytelling</h3>
+    <h3 class="">Storytelling</h3>
     <video loop
       muted
       controls>
@@ -119,24 +107,18 @@
         type="video/mp4" />
     </video>
 
-    <p class="p-4 text-center">Gracias por visitar mi rincón creativo en línea. Si estás listo para explorar el mundo a través de mis ojos y
+    <p class="">Gracias por visitar mi rincón creativo en línea. Si estás listo para explorar el mundo a través de mis ojos y
       crear recuerdos inolvidables juntos, ¡no dudes en ponerte en contacto! Estoy ansioso por ser parte de tu historia
       y transformar momentos en arte.</p>
   </main>
   <!-- Fin de Contenido -->
 
   <!-- Comienzo de Footer -->
-  <footer class="pie-pagina"
+  <footer class="footer"
     id="fin">
     <span>&COPY; copyright 2023 - ismaelsalanas.com</span>
   </footer>
   <!-- Fin de Footer -->
-
-  <!-- Script Bootstrap 5 -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-
 </body>
 
 </html>

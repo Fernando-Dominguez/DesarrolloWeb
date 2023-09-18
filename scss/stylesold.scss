@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Comienzo Cabecera */
+
+.cabecera {
+    // max-width: 100%;
+    // margin: 0px auto;
+    background-color: #000000a3;
+    height: 60px;
+    position: fixed;
+    .navegacion {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 0px 3%;
+        width: 100%;
+        height: 100%;
+        .marca {
+            display: flex;
+            align-items: center;
+            width: 30%;
+            .simbolo {
+                height: 40px;
+            }
+            .logotipo {
+                padding-left: 15px;
+                text-transform: uppercase;
+            }
+        }
+        .menu {
+            display: flex;
+            list-style: none;
+            li {
+                padding: 0px 20px;
+                a {
+                    text-decoration: none;
+                    color: #d2d2d2;
+                    &:hover {
+                        color: #C4C200;
+                    }
+                    &:focus {
+                        color: #929292;
+                    }
+                }
+                .active {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+/* Logotipo */
+
+
+
+/* Estados del menú */
+
+
+
+/* Oculto checkbox de menu */
+
+.navegacion #check__menu {
+    display: none;
+}
+
+.navegacion label {
+    display: none;
+}
+
+/* Fin Cabecera */
+
+/* Comienzo Contenido */
+
+.hero {
+    max-width: 100%;
+    // margin: 0px auto;
+    height: 100vh;
+    background-image: url(../img/portada-inicio.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    .contenedor {
+        display: flex;
+        flex-flow: row nowrap;
+        // width: 100%;
+        // margin: 0px auto;
+        .caja {
+            // flex-basis: 45%;
+            padding: 20px 3%;
+            h1 {
+                font-size: 65px;
+                font-family: 'Lucida Sans', Times, serif;
+            }
+            p {
+                font-size: 26px;
+                line-height: 1.5;
+                padding-top: 40px;
+            }
+        }
+    }
+}
+
+// /* Formulario */
+
+// .hero .contenedor .caja .formulario {
+//     flex: 50%;
+//     display: flex;
+//     margin-top: 30px;
+// }
+
+// .hero .contenedor .caja .formulario form {
+//     background-color: #fff;
+//     border-radius: 10px;
+//     padding: 10px;
+//     display: flex;
+
+//     /* Extension css-auto-prefix */
+
+//     -wetexto-inicio-border-radius: 10px;
+//     -moz-border-radius: 10px;
+//     -ms-border-radius: 10px;
+//     -o-border-radius: 10px;
+// }
+
+// .hero .contenedor .caja input {
+//     padding: 12px 32px;
+//     border: none;
+//     font-size: 20px;
+// }
+
+// .hero .contenedor .caja input[type="submit"] {
+//     background-color: #000;
+//     border-radius: 5px;
+//     color: #fff;
+
+//     /* Extension css-auto-prefix */
+
+//     -webkit-border-radius: 5px;
+//     -moz-border-radius: 5px;
+//     -ms-border-radius: 5px;
+//     -o-border-radius: 5px;
+// }
+
+// .hero .contenedor .caja input:focus {
+//     outline-style: none;
+// }
+
+// /* Fin Contenido */
+
+// /* Comienzo de Footer */
+// .pie-pagina {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 60px;
+// }
+
+
+// /* Comienzo Página Soy */
+
+// .foto_perfil img {
+//     width: 100%;
+//     padding: 30px;
+//     border-radius: 100%;
+//     -webkit-border-radius: 100%;
+//     -moz-border-radius: 100%;
+//     -ms-border-radius: 100%;
+//     -o-border-radius: 100%;
+// }
+
+// .contenedor video {
+//     width: 100%;
+// }
+
+// /* Fin Página Soy */
+
+
+// /* Comienzo Página Servicios */
+
+
+
+// /* Fin Página Servicios */
+
+
+// /* Comienzo Página Porfolio */
+
+// .porfolio {
+//     max-width: 100%;
+// }
+
+// .porfolio .contenedor_fotos {
+//     display: flex;
+//     flex-flow: row wrap;
+//     justify-content: space-between;
+// }
+
+// .porfolio .contenedor_fotos .columna {
+//     flex: 25%;
+// }
+
+// .porfolio .contenedor_fotos .columna img {
+//     flex: 100%;
+//     max-width: 100%;
+// }
+
+// /* Fin Página Porfolio */
+
+// /* Comienzo Página Contacto */
+
+
+
+// /* Fin Página Contacto */
+
+
+// /* Comienzo de media query */
+
+// @media screen and (max-width:992px) {
+
+//     /* Página Index */
+
+//     .hero .contenedor h1 {
+//         font-size: 55px;
+//         font-family: 'Lucida Sans', Times, serif;
+//     }
+
+//     .hero .contenedor p {
+//         font-size: 19px;
+//         line-height: 1.5;
+//         padding-top: 40px;
+//     }
+
+//     /* Página Porfolio */
+
+//     .porfolio .contenedor_fotos .columna {
+//         flex: 50%;
+//     }
+// }
+
+
+// @media screen and (max-width:768px) {
+
+//     /* Ocultando menu desk */
+
+//     .navegacion .menu {
+//         display: none;
+//     }
+
+//     /* Menu Hamburgueza */
+
+//     .navegacion label {
+//         display: block;
+//         margin-right: 20px;
+//         font-size: 40px;
+//     }
+
+//     .navegacion #check__menu:checked~.menu {
+//         background-color: #010101ec;
+//         width: 100%;
+//         height: 100vh;
+//         position: absolute;
+//         left: 0;
+//         top: 75px;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: start;
+//         align-items: center;
+//     }
+
+//     /* Página Index */
+
+//     /* Contenido */
+
+//     .hero {
+//         width: 100%;
+//         height: 100vh;
+//         background-image: url();
+//         display: flex;
+//         align-items: center;
+//     }
+
+//     .hero .contenedor {
+//         padding: 60px 40px;
+//         display: flex;
+//         height: 100%;
+//     }
+
+//     .hero .contenedor .caja {
+//         max-width: 100%;
+//         text-align: center;
+//         align-self: center;
+//     }
+
+//     /* Formulario */
+
+//     .hero .contenedor .caja .formulario {
+//         flex: 100%;
+//         justify-content: center;
+//     }
+
+//     .hero .contenedor .caja .formulario form {
+//         flex-flow: row wrap;
+//         justify-content: center;
+//     }
+
+//     .hero .contenedor .caja input {
+//         text-align: center;
+
+//     }
+
+//     .hero .contenedor .caja input[type="submit"] {
+//         width: 100%;
+//     }
+
+//     .hero .contenedor .caja .formulario {
+//         justify-content: center;
+//     }
+
+//     /* Footer */
+
+//     .pie-pagina {
+//         align-items: end;
+//         margin-top: 40px;
+//     }
+
+//     /* Página Porfolio */
+
+//     .porfolio .contenedor_fotos .columna {
+//         flex: 100%;
+//     }
+// }
+
+
+
+@import "./queries"

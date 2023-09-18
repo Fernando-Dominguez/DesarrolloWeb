@@ -1,0 +1,96 @@
+@media screen and (max-width: 480px) {
+    .hero {
+        background-image: url();
+        .contenedor {
+            .caja {
+                text-align: center;
+                p {
+                    padding: 0px 30px;
+                    padding-top: 40px;
+                }
+                .formulario {
+                    
+                    form {
+                        flex-flow: column wrap;
+                        align-items: center ;
+                        input{
+                            text-align: center;
+                        }
+                        input[type="submit"] {
+                            font-size: 1em;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 768px) {
+    
+       /* Ocultando menu desk */
+
+       .navegacion {
+            .menu {
+                display: none;
+            }
+            label {
+                display: block;
+                margin-right: 20px;
+                font-size: 40px;
+            }
+            #check__menu:checked~.menu {
+
+                width: 100%;
+                /* height: 100vh; */
+                position: absolute;
+                left: 0;
+                top: 70px;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                li {
+                    background-color: #000000da;
+                    padding: 15px;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1.5em;
+                }
+            }
+        }
+        .hero {
+            background-image: url();
+            .contenedor {
+                .caja {
+                    text-align: center;
+                    p {
+                        padding: 0px 30px;
+                        padding-top: 40px;
+                    }
+                    .formulario {
+                        justify-content: center;
+                        form {
+                            width: 80%;
+                            input {
+                                width: 60%;
+                            }
+                            input[type="submit"] {
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+@media screen and (min-width: 769px) {
+
+}
+@media screen and (max-width: 1200px) {
+}
+
+
+@import "./bucles";
