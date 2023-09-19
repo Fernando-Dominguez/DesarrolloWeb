@@ -1,16 +1,28 @@
-.contenedor_fotos {
+.portfolio {
+  h1 {
+    text-transform: uppercase;
+  }
+  h1,
+  p {
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5;
+  }
+  .contenedor_fotos {
     max-width: 100%;
     display: flex;
     flex-flow: row wrap;
-    .columna{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        background-color: rgb(0, 0, 0);
-        justify-content: center;
-        img{
-            width: 100%;
-        }
+    .columna {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      background-color: rgb(0, 0, 0);
+      justify-content: center;
+      img {
+        width: 100%;
+      }
     }
-
+  }
 }
+
+
