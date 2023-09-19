@@ -20,6 +20,7 @@
     padding: 30px;
     text-transform: uppercase;
   }
+  /* inicio de card de servicios */
   .container_card {
     display: grid;
     flex-flow: row wrap;
@@ -61,4 +62,5 @@
       }
     }
   }
+  /* fin de card de servicios */
 }

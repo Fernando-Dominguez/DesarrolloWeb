@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -104,6 +105,8 @@ body {
 .container_service {
   text-align: center;
   padding: 3%;
+  /* inicio de card de servicios */
+  /* fin de card de servicios */
 }
 .container_service h1 {
   text-transform: uppercase;
@@ -252,61 +255,7 @@ body {
   background-color: #78760C;
 }
 
-body {
-  background-color: #000;
-  color: #fff;
-}
-
-.navegacion {
-  display: flex;
-  max-width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 3%;
-}
-.navegacion .marca {
-  display: flex;
-  align-items: center;
-}
-.navegacion .marca img {
-  width: 70px;
-  padding: 10px 10px 10px 0px;
-}
-.navegacion .marca span {
-  text-transform: uppercase;
-  font-size: 1.2em;
-  padding: 10px;
-}
-.navegacion #check__menu {
-  display: none;
-}
-.navegacion .menu {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  width: 50%;
-}
-.navegacion .menu li {
-  display: inline-block;
-  padding: 0px 10px;
-}
-.navegacion .menu li a {
-  text-decoration: none;
-  color: #d2d2d2;
-}
-.navegacion .menu li a:hover {
-  color: #C4C200;
-}
-.navegacion .menu li a:focus {
-  color: #ca2b2b;
-}
-.navegacion .menu li .active {
-  color: #ffffff;
-}
-.navegacion label {
-  display: none;
-}
-
+/* inicio contenido */
 .hero {
   background-image: url(../img/portada-inicio.jpg);
   background-position: center;
@@ -322,7 +271,6 @@ body {
   background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 50%, #000, rgb(0, 0, 0));
 }
 .hero .contenedor .caja {
-  /* width: 50%; */
   padding: 20px 3%;
 }
 .hero .contenedor .caja h1 {
@@ -371,6 +319,65 @@ body {
   -o-border-radius: 5px;
 }
 
+/* fin contenido */
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Inicio navegación */
+.navegacion {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 3%;
+}
+.navegacion .marca {
+  display: flex;
+  align-items: center;
+}
+.navegacion .marca img {
+  width: 70px;
+  padding: 10px 10px 10px 0px;
+}
+.navegacion .marca span {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding: 10px;
+}
+.navegacion #check__menu {
+  display: none;
+}
+.navegacion .menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 50%;
+}
+.navegacion .menu li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+.navegacion .menu li a {
+  text-decoration: none;
+  color: #d2d2d2;
+}
+.navegacion .menu li a:hover {
+  color: #c4c200;
+}
+.navegacion .menu li a:focus {
+  color: #ca2b2b;
+}
+.navegacion .menu li .active {
+  color: #ffffff;
+}
+.navegacion label {
+  display: none;
+}
+
+/* fin Navegación */
+/* inicio footer */
 .footer {
   display: flex;
   justify-content: center;
@@ -380,6 +387,7 @@ body {
   text-align: center;
 }
 
+/* fin footer */
 @media screen and (min-width: 768px) {
   /* inicio page servicios */
   .container_service .container_card {
