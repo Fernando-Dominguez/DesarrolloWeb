@@ -1,32 +1,14 @@
-@media screen and (max-width: 480px) {
-  /* inicio index.html */
-  .hero {
-    background-image: url();
-    .contenedor {
-      .caja {
-        text-align: center;
-        p {
-          padding: 0px 30px;
-          padding-top: 40px;
-        }
-        .formulario {
-          form {
-            flex-flow: column wrap;
-            align-items: center;
-            input {
-              text-align: center;
-            }
-            input[type="submit"] {
-              font-size: 1em;
-              width: 100%;
-            }
-          }
-        }
-      }
+@media screen and (min-width: 768px) {
+  /* inicio page servicios */
+  .container_service {
+    .container_card {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
     }
   }
-  /* fin index.html */
+  /* fin page servicios */
 }
+
 @media screen and (max-width: 768px) {
   /* inicio Ocultando menu desk */
   .navegacion {
@@ -59,7 +41,7 @@
   }
   /* fin Ocultando menu desk */
 
-  /* inicio index.html */
+  /* inicio page inicio */
   .hero {
     background-image: url();
     .contenedor {
@@ -84,7 +66,7 @@
       }
     }
   }
-  /* fin index.html */
+  /* fin page inicio */
 
   /* inicio page soy */
   .wrap {
@@ -122,13 +104,75 @@
       }
     }
   }
-
   /* fin page soy */
+
+  /* inicio page servicios */
+  .container_service {
+    .container_card {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+  /* fin page servicios */
+
+  /* inicio page contacto */
+  .cont_contacto {
+    .wrap_contacto {
+      h1,
+      h2,
+      p {
+        text-align: center;
+      }
+    }
+    .container {
+      .seccion-form {
+        input[type="submit"] {
+          width: 100%;
+        }
+      }
+    }
+  }
+  /* fin page contacto */
+
 }
 
-@media screen and (min-width: 769px) {
-}
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 480px) {
+  /* inicio page inicio */
+  .hero {
+    background-image: url();
+    .contenedor {
+      .caja {
+        text-align: center;
+        p {
+          padding: 0px 30px;
+          padding-top: 40px;
+        }
+        .formulario {
+          form {
+            flex-flow: column wrap;
+            align-items: center;
+            input {
+              text-align: center;
+            }
+            input[type="submit"] {
+              font-size: 1em;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* fin page inicio */
+
+  /* inicio page servicios */
+  .container_service {
+    .container_card {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+    }
+  }
+  /* fin page servicios */
 }
 
 @import "./bucles";

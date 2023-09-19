@@ -10,25 +10,21 @@ html {
 
 body {
   min-height: 100%;
-  background-color: aqua;
 }
 
 .header {
   grid-area: header;
-  /* background-color: red; */
 }
 
 .main {
   grid-area: main;
-  /* background-color: blue; */
 }
 
 .footer {
   grid-area: footer;
-  /* background-color: yellow; */
 }
 
-.grid-container {
+.grid_container {
   display: grid;
   grid-template: "header" 80px "main" auto "footer" 60px/100%;
 }
@@ -84,9 +80,11 @@ body {
   padding: 0 3%;
 }
 .wrap .copy .storytelling p {
+  padding: 30px 0 30px 0;
   line-height: 1.5em;
 }
 .wrap .copy .storytelling p:first-child {
+  padding: 20px 0 20px 0;
   width: 66%;
 }
 .wrap .copy .storytelling h3 {
@@ -108,7 +106,6 @@ body {
   padding: 3%;
 }
 .container_service h1 {
-  color: #C30AC4;
   text-transform: uppercase;
   padding-bottom: 20px;
 }
@@ -177,15 +174,11 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: red;
+  background-color: rgb(0, 0, 0);
   justify-content: center;
 }
 .contenedor_fotos .columna img {
   width: 100%;
-}
-
-p {
-  padding: 20px 0px;
 }
 
 .cont_contacto {
@@ -195,57 +188,58 @@ p {
   justify-content: space-between;
   padding: 10px 3%;
 }
-
-.wrap_contacto {
-  width: 100%;
-  display: flex;
-  flex-flow: column wrap;
+.cont_contacto .wrap_contacto {
   padding-right: 3%;
 }
-
-.container {
+.cont_contacto .wrap_contacto p {
+  padding: 20px 0px;
+}
+.cont_contacto .container {
   max-width: 100%;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
-
-.seccion-form {
+.cont_contacto .container .seccion-form {
   margin-bottom: 20px;
 }
-
-label {
+.cont_contacto .container .seccion-form label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
   color: #313131;
 }
-
-input[type=text],
-input[type=email],
-textarea {
+.cont_contacto .container .seccion-form input[type=text],
+.cont_contacto .container .seccion-form input[type=email],
+.cont_contacto .container .seccion-form textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
-
-textarea {
+.cont_contacto .container .seccion-form textarea {
   height: 150px;
 }
-
-input[type=submit] {
-  background-color: #007bff;
+.cont_contacto .container .seccion-form input[type=submit] {
+  background-color: #78760C;
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 3px;
+  border-radius: 30px;
   cursor: pointer;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
-
-input[type=submit]:hover {
-  background-color: #0056b3;
+.cont_contacto .container .seccion-form input[type=submit]:hover {
+  background-color: #78760C;
 }
 
 body {
@@ -376,30 +370,13 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 480px) {
-  /* inicio index.html */
-  .hero {
-    background-image: url();
+@media screen and (min-width: 768px) {
+  /* inicio page servicios */
+  .container_service .container_card {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
-  .hero .contenedor .caja {
-    text-align: center;
-  }
-  .hero .contenedor .caja p {
-    padding: 0px 30px;
-    padding-top: 40px;
-  }
-  .hero .contenedor .caja .formulario form {
-    flex-flow: column wrap;
-    align-items: center;
-  }
-  .hero .contenedor .caja .formulario form input {
-    text-align: center;
-  }
-  .hero .contenedor .caja .formulario form input[type=submit] {
-    font-size: 1em;
-    width: 100%;
-  }
-  /* fin index.html */
+  /* fin page servicios */
 }
 @media screen and (max-width: 768px) {
   /* inicio Ocultando menu desk */
@@ -430,7 +407,7 @@ body {
     font-size: 1.5em;
   }
   /* fin Ocultando menu desk */
-  /* inicio index.html */
+  /* inicio page inicio */
   .hero {
     background-image: url();
   }
@@ -453,7 +430,7 @@ body {
   .hero .contenedor .caja .formulario form input[type=submit] {
     font-size: 1em;
   }
-  /* fin index.html */
+  /* fin page inicio */
   /* inicio page soy */
   .wrap .copy h1 {
     text-align: center;
@@ -485,6 +462,53 @@ body {
     text-align: center;
   }
   /* fin page soy */
+  /* inicio page servicios */
+  .container_service .container_card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  /* fin page servicios */
+  /* inicio page contacto */
+  .cont_contacto .wrap_contacto h1,
+  .cont_contacto .wrap_contacto h2,
+  .cont_contacto .wrap_contacto p {
+    text-align: center;
+  }
+  .cont_contacto .container .seccion-form input[type=submit] {
+    width: 100%;
+  }
+  /* fin page contacto */
+}
+@media screen and (max-width: 480px) {
+  /* inicio page inicio */
+  .hero {
+    background-image: url();
+  }
+  .hero .contenedor .caja {
+    text-align: center;
+  }
+  .hero .contenedor .caja p {
+    padding: 0px 30px;
+    padding-top: 40px;
+  }
+  .hero .contenedor .caja .formulario form {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .hero .contenedor .caja .formulario form input {
+    text-align: center;
+  }
+  .hero .contenedor .caja .formulario form input[type=submit] {
+    font-size: 1em;
+    width: 100%;
+  }
+  /* fin page inicio */
+  /* inicio page servicios */
+  .container_service .container_card {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  /* fin page servicios */
 }
 @media screen and (max-width: 480px) {
   .col-xs-1 {

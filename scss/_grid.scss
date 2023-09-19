@@ -3,21 +3,17 @@ html {
 }
 body {
     min-height: 100%;
-    background-color: aqua;
 }
 .header {
     grid-area: header;
-    /* background-color: red; */
 }
 .main {
     grid-area: main;
-    /* background-color: blue; */
 }
 .footer {
     grid-area: footer;
-    /* background-color: yellow; */
 }
-.grid-container {
+.grid_container {
     display: grid;
     grid-template:
         "header" 80px
