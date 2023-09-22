@@ -1,8 +1,14 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Outfit:wght@100;400;700;900&display=swap");
 * {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: "Croissant One", cursive;
 }
 
 html {
@@ -27,11 +33,59 @@ body {
 
 .grid_container {
   display: grid;
-  grid-template: "header" 80px "main" auto "footer" 60px/100%;
+  grid-template: "header" 80px "main" auto "footer" 100px/100%;
 }
 
-* {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+/* inicio footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer span {
+  padding: 5px;
+}
+.footer .seguime {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  padding-top: 10px;
+}
+.footer .seguime .redes_desk {
+  display: flex;
+  align-items: center;
+}
+.footer .seguime .redes_desk .redes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer .seguime .redes_desk .redes .social {
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.footer .seguime .legales {
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer .seguime .legales a {
+  color: white;
+  text-decoration: none;
+}
+
+/* fin footer */
+.container_soy {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .wrap {
@@ -39,7 +93,7 @@ body {
   padding: 3%;
 }
 .wrap .copy h1 {
-  text-transform: uppercase;
+  font-size: 3em;
   padding: 1% 3% 3%;
 }
 .wrap .copy .perfil {
@@ -71,6 +125,7 @@ body {
   margin-right: -30px;
   max-width: 300px;
   min-width: 250px;
+  border: 1px solid #c5c5c5;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -81,10 +136,12 @@ body {
   padding: 0 3%;
 }
 .wrap .copy .storytelling p {
+  font-size: 1.3em;
   padding: 30px 0 30px 0;
   line-height: 1.5em;
 }
 .wrap .copy .storytelling p:first-child {
+  font-size: 1.1em;
   padding: 20px 0 20px 0;
   width: 66%;
 }
@@ -103,13 +160,15 @@ body {
 }
 
 .container_service {
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
   padding: 3%;
   /* inicio de card de servicios */
   /* fin de card de servicios */
 }
 .container_service h1 {
-  text-transform: uppercase;
+  font-size: 3em;
   padding-bottom: 20px;
 }
 .container_service p {
@@ -121,20 +180,27 @@ body {
   -o-border-radius: 30px;
   /* color: black; */
   padding: 15px;
-  line-height: 1.5rem;
+  font-size: 1.3em;
+  line-height: 1.8rem;
+}
+.container_service p:last-child {
+  padding-top: 50px;
 }
 .container_service h2 {
+  font-size: 2em;
   padding: 30px;
-  text-transform: uppercase;
 }
 .container_service .container_card {
   display: grid;
+  justify-content: space-evenly;
   flex-flow: row wrap;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1em;
 }
 .container_service .container_card .card {
+  margin: 0 auto;
+  max-width: 500px;
   text-align: center;
   border: 3px solid grey;
   border-radius: 30px;
@@ -142,16 +208,23 @@ body {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  box-shadow: 0px 0px 10px 4px white;
   overflow: auto;
   background-color: white;
   color: black;
+}
+.container_service .container_card .card:hover {
+  transition: 0.3s;
+  scale: 1.03;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 .container_service .container_card .card .card_img {
   width: 100%;
 }
 .container_service .container_card .card .card-title {
-  color: #c41416;
+  color: #484848;
   padding: 10px;
   font-size: 1.5em;
 }
@@ -170,12 +243,14 @@ body {
 }
 
 .portfolio h1 {
-  text-transform: uppercase;
-}
-.portfolio h1,
-.portfolio p {
   text-align: center;
-  padding: 20px;
+  font-size: 3em;
+  padding: 40px 0;
+}
+.portfolio p {
+  font-size: 1.3em;
+  text-align: center;
+  padding: 20px 3% 60px 3%;
   line-height: 1.5;
 }
 .portfolio .contenedor_fotos {
@@ -184,6 +259,7 @@ body {
   flex-flow: row wrap;
 }
 .portfolio .contenedor_fotos .columna {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -195,24 +271,42 @@ body {
 }
 
 .cont_contacto {
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 10px 3%;
 }
+.cont_contacto h1 {
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  padding: 10px 0 50px 0;
+}
 .cont_contacto .wrap_contacto {
   padding-right: 3%;
 }
 .cont_contacto .wrap_contacto p {
+  font-size: 1.3em;
   padding: 20px 0px;
 }
+.cont_contacto .wrap_contacto p:first-child {
+  padding-top: 0;
+}
 .cont_contacto .container {
-  max-width: 100%;
+  margin: 0 auto;
+  max-width: 500px;
+  max-height: 500px;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+}
+.cont_contacto .container h2 {
+  color: #313131;
+  text-align: center;
+  padding: 20px 0 40px 0;
+  font-size: 2em;
 }
 .cont_contacto .container .seccion-form {
   margin-bottom: 20px;
@@ -229,17 +323,17 @@ body {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 .cont_contacto .container .seccion-form textarea {
   height: 150px;
 }
 .cont_contacto .container .seccion-form input[type=submit] {
-  background-color: #78760C;
+  background-color: #78760c;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -252,7 +346,7 @@ body {
   -o-border-radius: 30px;
 }
 .cont_contacto .container .seccion-form input[type=submit]:hover {
-  background-color: #78760C;
+  background-color: #78760c;
 }
 
 /* inicio contenido */
@@ -275,7 +369,6 @@ body {
 }
 .hero .contenedor .caja h1 {
   font-size: 3em;
-  font-family: "Lucida Sans", Times, serif;
 }
 .hero .contenedor .caja p {
   font-size: 1.3em;
@@ -377,18 +470,15 @@ body {
 }
 
 /* fin Navegación */
-/* inicio footer */
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer span {
-  text-align: center;
-}
-
-/* fin footer */
 @media screen and (min-width: 768px) {
+  /* inicio page servicios */
+  .container_service .container_card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  /* fin page servicios */
+}
+@media screen and (min-width: 992px) {
   /* inicio page servicios */
   .container_service .container_card {
     grid-template-columns: repeat(3, 1fr);
@@ -482,8 +572,8 @@ body {
   /* fin page soy */
   /* inicio page servicios */
   .container_service .container_card {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
   }
   /* fin page servicios */
   /* inicio page contacto */
@@ -496,6 +586,19 @@ body {
     width: 100%;
   }
   /* fin page contacto */
+  /* inicio footer */
+  .footer {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .legales {
+    width: 100%;
+    height: auto;
+    flex-flow: column-reverse wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  /* fin footer */
 }
 @media screen and (max-width: 480px) {
   /* inicio page inicio */
@@ -527,6 +630,20 @@ body {
     grid-template-rows: repeat(6, 1fr);
   }
   /* fin page servicios */
+  .footer .seguime {
+    text-align: center;
+  }
+  .footer .seguime .redes_desk {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .footer .seguime .titulo {
+    width: 100%;
+  }
+  .footer span a {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 480px) {
   .col-xs-1 {

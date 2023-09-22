@@ -1,22 +1,40 @@
-
 .cont_contacto {
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 10px 3%;
+  h1{
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    padding: 10px 0 50px 0;
+  }
   .wrap_contacto {
     padding-right: 3%;
+    
     p {
-        padding: 20px 0px;
+      font-size: 1.3em;
+      padding: 20px 0px;
+      &:first-child{
+        padding-top: 0;
       }
+    }
   }
   .container {
-    max-width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+    max-height: 500px;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    h2 {
+      color: #313131;
+      text-align: center;
+      padding: 20px 0 40px 0;
+      font-size: 2em;
+    }
     .seccion-form {
       margin-bottom: 20px;
       label {
@@ -31,11 +49,11 @@
         width: 100%;
         padding: 10px;
         border: 1px solid #ccc;
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
 }
 
       textarea {
@@ -43,7 +61,7 @@
       }
 
       input[type="submit"] {
-        background-color: #78760C;
+        background-color: #78760c;
         color: #fff;
         padding: 10px 20px;
         border: none;
@@ -54,10 +72,10 @@
         -moz-border-radius: 30px;
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
-}
+      }
 
       input[type="submit"]:hover {
-        background-color: #78760C;
+        background-color: #78760c;
       }
     }
   }

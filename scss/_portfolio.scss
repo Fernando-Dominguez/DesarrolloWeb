@@ -1,11 +1,13 @@
 .portfolio {
   h1 {
-    text-transform: uppercase;
-  }
-  h1,
-  p {
     text-align: center;
-    padding: 20px;
+    font-size: 3em;
+    padding: 40px 0;
+  }
+  p {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 20px 3% 60px 3% ;
     line-height: 1.5;
   }
   .contenedor_fotos {
@@ -13,6 +15,7 @@
     display: flex;
     flex-flow: row wrap;
     .columna {
+      position: relative;
       display: flex;
       flex-direction: column;
       height: 100%;
@@ -24,5 +27,3 @@
     }
   }
 }
-
-

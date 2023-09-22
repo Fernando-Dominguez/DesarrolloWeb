@@ -1,5 +1,6 @@
 @import "reset";
 @import "grid";
+@import "footer";
 @import "variables";
 @import "fonts";
 @import "soy";
@@ -64,14 +65,5 @@ body {
 }
 /* fin Navegación */
 
-/* inicio footer */
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  span {
-    text-align: center;
-  }
-}
-/* fin footer */
+
 @import "queries";

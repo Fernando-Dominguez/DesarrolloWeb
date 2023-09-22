@@ -1,0 +1,47 @@
+/* inicio footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    padding: 5px;
+  }
+  .seguime {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-top: 10px;
+    .redes_desk {
+      display: flex;
+      align-items: center;
+      .redes {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        .social {
+          font-size: 2em;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          padding: 5px;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+    .legales {
+      display: flex;
+      flex-flow: row wrap;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* fin footer */

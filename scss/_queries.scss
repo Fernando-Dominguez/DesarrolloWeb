@@ -1,4 +1,18 @@
+
 @media screen and (min-width: 768px) {
+  /* inicio page servicios */
+  .container_service {
+    .container_card {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    
+
+  }
+  /* fin page servicios */
+}
+@media screen and (min-width: 992px) {
   /* inicio page servicios */
   .container_service {
     .container_card {
@@ -7,7 +21,12 @@
     }
   }
   /* fin page servicios */
+
+
+  
+
 }
+
 
 @media screen and (max-width: 768px) {
   /* inicio Ocultando menu desk */
@@ -109,8 +128,8 @@
   /* inicio page servicios */
   .container_service {
     .container_card {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
     }
   }
   /* fin page servicios */
@@ -133,6 +152,21 @@
     }
   }
   /* fin page contacto */
+  /* inicio footer */
+
+  .footer {
+    justify-content: center;
+    align-items: center;
+    .legales {
+      width: 100%;
+      height: auto;
+      flex-flow: column-reverse wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  /* fin footer */
 
 }
 
@@ -173,6 +207,22 @@
     }
   }
   /* fin page servicios */
+  .footer {
+    .seguime {
+      text-align: center;
+      .redes_desk {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+      .titulo {
+        width: 100%;
+      }
+    }
+    span a {
+      font-size: 12px;
+    }
+  }
 }
 
 @import "./bucles";
