@@ -1,14 +1,11 @@
 /* inicio contenido */
 .hero {
-  background-image: url(../img/portada-inicio.jpg);
+  background-image: url(../assets/img/hero/portada-inicio.jpg);
   background-position: center;
   background-size: cover;
-  display: flex;
-  align-items: center;
+  @include dflex(flex, none, center, none);
   .contenedor {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+    @include dflex(flex, none, center, row nowrap);
     height: 100%;
     background: linear-gradient(
       -90deg,

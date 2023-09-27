@@ -1,13 +1,14 @@
-@import "reset";
-@import "grid";
-@import "footer";
-@import "variables";
-@import "fonts";
-@import "soy";
-@import "servicios";
-@import "portfolio";
-@import "contacto";
-@import "inicio";
+@import "./partials/mixin";
+@import "./partials/variables";
+@import "./partials/reset";
+@import "./partials/grid";
+@import "./partials/footer";
+@import "./partials/fonts";
+@import "./partials/soy";
+@import "./partials/servicios";
+@import "./partials/portfolio";
+@import "./partials/contacto";
+@import "./partials/inicio";
 
 body {
   background-color: #000;
@@ -15,14 +16,11 @@ body {
 }
 /* Inicio navegación */
 .navegacion {
-  display: flex;
+  @include dflex(flex, space-between, center, none);
   max-width: 100%;
-  justify-content: space-between;
-  align-items: center;
   padding: 0px 3%;
   .marca {
-    display: flex;
-    align-items: center;
+    @include dflex(flex, none, center, none);
     img {
       width: 70px;
       padding: 10px 10px 10px 0px;
@@ -37,8 +35,7 @@ body {
     display: none;
   }
   .menu {
-    display: flex;
-    justify-content: space-around;
+    @include dflex(flex, space-around, none, none);
     list-style: none;
     width: 50%;
     li {
@@ -65,5 +62,4 @@ body {
 }
 /* fin Navegación */
 
-
-@import "queries";
+@import "./partials/queries";

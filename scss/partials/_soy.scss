@@ -14,8 +14,7 @@
       display: flex;
       padding: 40px 0px 0px 0px;
       .barra_h2 {
-        display: flex;
-        align-items: center;
+        @include dflex(flex, none, center, none);
         width: 95%;
         height: 4em;
         background-color: #78760C;

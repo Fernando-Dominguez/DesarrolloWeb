@@ -1,0 +1,38 @@
+/* 
+display:
+justify-content:
+align-items:
+flex-flow:
+*/
+
+@mixin dflex($disp, $just, $alin, $flow) {
+  @if ($just== "none") and ($alin== "none") and ($flow== "none") {
+    display: $disp;
+  } @else if($just== "none") and ($alin== "none") {
+    display: $disp;
+    flex-flow: $flow;
+  } @else if($just== "none") and ($flow== "none") {
+    display: $disp;
+    align-items: $alin;
+  } @else if ($alin== "none") and ($flow== "none") {
+    display: $disp;
+    justify-content: $just;
+  } @else if ($just== "none") {
+    display: $disp;
+    align-items: $alin;
+    flex-flow: $flow;
+  } @else if ($alin== "none") {
+    display: $disp;
+    justify-content: $just;
+    flex-flow: $flow;
+  } @else if ($flow== "none") {
+    display: $disp;
+    justify-content: $just;
+    align-items: $alin;
+  } @else {
+    display: $disp;
+    justify-content: $just;
+    align-items: $alin;
+    flex-flow: $flow;
+  }
+}

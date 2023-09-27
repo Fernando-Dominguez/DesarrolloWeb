@@ -1,9 +1,7 @@
 .cont_contacto {
+  @include dflex(flex, space-between, none, row wrap);
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
   padding: 10px 3%;
   h1{
     width: 100%;

@@ -16,3 +16,6 @@
 *.sqlite
 *.txt
 
+# Ignora carpeta Backup Css
+
+css Backup
