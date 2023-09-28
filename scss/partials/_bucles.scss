@@ -1,4 +1,4 @@
-/* @import "./variables"; */
+/* Bucle  */
 
 @each $media, $point in $media {
     @if($media=="xs"){

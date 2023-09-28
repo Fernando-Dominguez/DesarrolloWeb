@@ -79,6 +79,7 @@
   .wrap {
     .copy {
       h1 {
+        font-size: 2.3em;
         text-align: center;
       }
       .perfil {
@@ -88,7 +89,8 @@
           flex-direction: column;
           width: 100%;
           margin: 0 5%;
-          h2 {
+          h2{
+            font-size: 1.8em;
           }
           img {
             width: 100%;
@@ -182,7 +184,7 @@
     }
   }
   /* fin page inicio */
-
+  
   /* inicio page servicios */
   .container_service {
     .container_card {

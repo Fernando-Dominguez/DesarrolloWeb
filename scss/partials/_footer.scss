@@ -1,4 +1,4 @@
-/* inicio footer */
+/* Comienzo footer */
 .footer {
   @include dflex(flex, center, center, none);
   span {
@@ -19,7 +19,7 @@
           text-align: center;
           padding: 5px;
           text-decoration: none;
-          color: rgb(255, 255, 255);
+          color: white;
         }
       }
     }

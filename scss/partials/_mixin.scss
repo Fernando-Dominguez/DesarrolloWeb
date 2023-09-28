@@ -1,4 +1,6 @@
 /* 
+@mixin dflex($disp, $just, $alin, $flow)
+
 display:
 justify-content:
 align-items:
@@ -34,5 +36,31 @@ flex-flow:
     justify-content: $just;
     align-items: $alin;
     flex-flow: $flow;
+  }
+}
+
+/* 
+@mixin hp($hp)
+
+Encabezados y parrafos
+font-size:
+line-height:
+Parametros h1, h2, h3 y p
+*/
+
+@mixin textos($hp) {
+  @if ($hp== "h1") {
+    font-size: 3em;
+    line-height: 1.3em;
+  } @else if($hp== "h2") {
+    font-size: 2.2em;
+    line-height: 1.3em;
+  } @else if($hp== "h3") {
+    font-size: 1.8em;
+    line-height: 1.3em;
+  } @else if($hp== "p") {
+    font-size: 1.3em;
+    line-height: 1.5em;
+  } @else {
   }
 }

@@ -1,10 +1,18 @@
 * {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-h1, h2, h3{
-    font-family: 'Croissant One', cursive;
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Croissant One", cursive;
 }

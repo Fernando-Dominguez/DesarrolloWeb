@@ -1,3 +1,4 @@
+/* Variables Breack point mediaqueri */
 $media:(
     // max-width
     xs: 480px,
@@ -10,3 +11,14 @@ $media:(
     // min-width
     xl: 1200px,
 );
+
+/* Variables Colores */
+
+$color_pri: #c4c200;
+$color_sec: #78760c;
+$color_grisc: #c5c5c5;
+$color_griso: #484848;
+$color_link: $color_grisc;
+$color_hover: $color_pri;
+$color_focus: #ca2b2b;
+$color_active: #ffffff;

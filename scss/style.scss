@@ -1,65 +1,16 @@
+@import "./partials/fonts";
+@import "./partials/reset";
 @import "./partials/mixin";
 @import "./partials/variables";
-@import "./partials/reset";
 @import "./partials/grid";
+@import "./partials/header";
 @import "./partials/footer";
-@import "./partials/fonts";
+@import "./partials/inicio";
 @import "./partials/soy";
 @import "./partials/servicios";
 @import "./partials/portfolio";
 @import "./partials/contacto";
-@import "./partials/inicio";
 
-body {
-  background-color: #000;
-  color: #fff;
-}
-/* Inicio navegación */
-.navegacion {
-  @include dflex(flex, space-between, center, none);
-  max-width: 100%;
-  padding: 0px 3%;
-  .marca {
-    @include dflex(flex, none, center, none);
-    img {
-      width: 70px;
-      padding: 10px 10px 10px 0px;
-    }
-    span {
-      text-transform: uppercase;
-      font-size: 1.2em;
-      padding: 10px;
-    }
-  }
-  #check__menu {
-    display: none;
-  }
-  .menu {
-    @include dflex(flex, space-around, none, none);
-    list-style: none;
-    width: 50%;
-    li {
-      display: inline-block;
-      padding: 0px 10px;
-      a {
-        text-decoration: none;
-        color: #d2d2d2;
-        &:hover {
-          color: #c4c200;
-        }
-        &:focus {
-          color: #ca2b2b;
-        }
-      }
-      .active {
-        color: #ffffff;
-      }
-    }
-  }
-  label {
-    display: none;
-  }
-}
-/* fin Navegación */
+
 
 @import "./partials/queries";

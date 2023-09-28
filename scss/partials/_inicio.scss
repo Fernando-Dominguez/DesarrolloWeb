@@ -1,4 +1,4 @@
-/* inicio contenido */
+/* Comienzo contenido page inicio */
 .hero {
   background-image: url(../assets/img/hero/portada-inicio.jpg);
   background-position: center;
@@ -16,18 +16,17 @@
     .caja {
       padding: 20px 3%;
       h1 {
-        font-size: 3em;
+        @include textos(h1);
       }
       p {
-        font-size: 1.3em;
-        line-height: 1.5;
+        @include textos(p);
         padding-top: 40px;
       }
       .formulario {
         display: flex;
         margin-top: 30px;
         form {
-          background-color: #fff;
+          background-color: white;
           border-radius: 10px;
           padding: 10px;
           display: flex;
@@ -49,9 +48,9 @@
             }
           }
           input[type="submit"] {
-            background-color: #000;
+            background-color: black;
             border-radius: 5px;
-            color: #fff;
+            color: white;
             font-size: 1em;
 
             /* Extension css-auto-prefix */
@@ -66,4 +65,4 @@
     }
   }
 }
-/* fin contenido */
+/* fin contenido page inicio */
