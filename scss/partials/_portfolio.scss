@@ -1,4 +1,4 @@
-.portfolio {
+.container_portfolio {
   h1 {
     @include textos(h1);
     text-align: center;
@@ -21,7 +21,7 @@
         width: 100%;
       }
     }
-    .light-box {
+    .caja_foto {
       position: fixed;
       top: 0;
       left: 0;

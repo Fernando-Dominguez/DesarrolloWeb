@@ -1,4 +1,4 @@
-.cont_contacto {
+.container_contacto {
   @include dflex(flex, space-between, none, row wrap);
   max-width: 1200px;
   margin: 0 auto;
@@ -22,7 +22,7 @@
       }
     }
   }
-  .container {
+  .wrap_formulario {
     margin: 0 auto;
     max-width: 500px;
     max-height: 500px;
@@ -35,7 +35,7 @@
       text-align: center;
       padding: 20px 0 40px 0;
     }
-    .seccion-form {
+    .seccion_formulario {
       margin-bottom: 20px;
       label {
         display: block;
