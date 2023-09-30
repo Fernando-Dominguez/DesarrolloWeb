@@ -3,7 +3,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 3%;
-  h1{
+  h1 {
     width: 100%;
     @include textos(h1);
     text-align: center;
@@ -11,13 +11,13 @@
   }
   .wrap_contacto {
     padding-right: 3%;
-    h2{
+    h2 {
       @include textos(h2);
     }
     p {
       @include textos(p);
       padding: 20px 0px;
-      &:first-child{
+      &:first-child {
         padding-top: 0;
       }
     }
@@ -25,13 +25,13 @@
   .wrap_formulario {
     margin: 0 auto;
     max-width: 500px;
-    max-height: 500px;
+    max-height: 520px;
     padding: 20px;
     background-color: white;
     border-radius: 5px;
     h2 {
       @include textos(h2);
-      color: #313131;
+      color: $color_griso;
       text-align: center;
       padding: 20px 0 40px 0;
     }
@@ -54,28 +54,10 @@
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
-}
+      }
 
       textarea {
         height: 150px;
-      }
-
-      input[type="submit"] {
-        background-color: $color_sec;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 3px;
-        border-radius: 30px;
-        cursor: pointer;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
-      }
-
-      input[type="submit"]:hover {
-        background-color: $color_sec;
       }
     }
   }

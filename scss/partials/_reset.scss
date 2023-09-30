@@ -16,3 +16,22 @@ h2,
 h3 {
   font-family: "Croissant One", cursive;
 }
+
+/* Seteo general de los botones */
+.boton {
+  background-color: $color_sec;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  &:hover {
+    background-color: $color_sec;
+  }
+}
